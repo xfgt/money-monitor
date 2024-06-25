@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="/public/js/actions.js"></script>
+    <script type="text/javascript" src="/public/js/time.js"></script>
+    <link rel="stylesheet" href="public/css/indexpage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Monitoring</title>
+</head>
+
+<body onload="loadBalance()">
+    <div id="statusBox"><a href="history.html">История</a></div>
+    
+    <div id="mainContent">
+        <div id="inputBox">
+            <form id="balance">
+                <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="f_balance" style="font-weight: 800;"></tt> лв.</h2>
+                <div id="mainButtons">
+                    <a
+                        onclick="document.getElementById('incomeFundsContainer').style.display = 'block';
+                        document.getElementById('expencesContainer').style.display = 'none';">
+                        <input type="button" value="+ Въвеждане" id="incomeButton"></input>
+                    </a>
+
+                    <a
+                        onclick="document.getElementById('expencesContainer').style.display = 'block';
+                        document.getElementById('incomeFundsContainer').style.display = 'none';">
+                        <input type="button" value="- Извеждане" id="outcomeButton"></input>
+                    </a>
+                </div>
+                <br><br>
+
+                
+            
+                <div id="incomeFundsContainer" style="display:none;">
+                    <label>Въвеждана сума </label>
+                    <input type="number" id="incomeFundsContainer_numberfield" required />
+                    <br>
+                    <label>Аргументи (задължително) </label>
+                    <input type="text" id="incomeFundsContainer_textfieldArguments" required />
+                    <hr><br>
+                    <input type="button" value="Въведи" id="incomeFundsContainer_submitButton" onclick="add()"></input>
+                </div>
+           
+
+
+                <div id="expencesContainer" style="display:none;">
+                    <label>Извеждана сума </label>
+                    <input type="number" id="expencesContainer_numberfield" required />
+                    <br>
+                    <label>Аргументи (задължително) </label>
+                    <input type="text" id="expencesContainer_textfieldArguments" required />
+                    <hr><br>
+                    <input type="button" value="Изведи" id="expencesContainer_submitButton" onclick="get()"></input>
+                </div>
+            </form>
+
+            
+            
+        </div>
+        <div id="history">
+            <table id="tbl">
+                <caption>История</caption>
+                <tr>
+                    <th>+ / -</th>
+                    <th>No</th>
+                    <th>Дата</th>
+                    <th>Сума</th>
+                    <th>Причина</th>
+                </tr>
+
+                <tr id="trtr">
+                    <td id="type"></td>
+                    <td id="i"></td>
+                    <td id="date"></td>
+                    <td id="money"></td>
+                    <td id="reason"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="errormsg"></div>
+    </div>
+</body>
+
+</html>
