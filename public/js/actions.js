@@ -9,8 +9,8 @@ var counter = 0;
 var income = 0.00;
 var outcome = 0.00;
 
-var income_args = document.getElementById("incomeFundsContainer_textfieldArguments").value;
-var outcome_args = document.getElementById("expencesContainer_textfieldArguments").value;
+var income_args = document.getElementById("incomeFundsContainer_textfieldArguments");
+var outcome_args = document.getElementById("expencesContainer_textfieldArguments");
 
 var type, i, money, reason;
 
@@ -26,18 +26,15 @@ function add(){
   balance += income;
   newBalance = document.getElementById("f_balance").innerHTML = balance;
   
-  // type = document.getElementById("type").innerHTML = "+";
-  // i = document.getElementById("i").innerHTML = counter;
-  // timeCount();
-  // money = document.getElementById("money").innerHTML = income;
-  // reason = document.getElementById("reason").innerHTML = income_args;
-  var trtr = document.getElementById("tbl").innerHTML +=
-    "<td>+</td>" + 
+   
+
+
+  var input = document.getElementById("tbl").innerHTML +=
+    "<td class=\"positive\">+</td>" + 
     "<td>" + counter + "</td>" + 
     "<td>" + timeCount() + "</td>" + 
     "<td>" + income + "</td>" + 
     "<td>" + income_args + "</td>";
-  
 
 }
 
@@ -47,14 +44,9 @@ function get(){
   balance -= outcome;
   newBalance = document.getElementById("f_balance").innerHTML = balance;
 
-  // type = document.getElementById("type").innerHTML = "-";
-  // i = document.getElementById("i").innerHTML = counter;
-  // timeCount();
-  // money = document.getElementById("money").innerHTML = outcome;
-  // reason = document.getElementById("reason").innerHTML = outcome_args;
-
+ 
   var trtr = document.getElementById("tbl").innerHTML +=
-    "<td>-</td>" + 
+    "<td class=\"negative\">-</td>" + 
     "<td>" + counter + "</td>" + 
     "<td>" + timeCount() + "</td>" + 
     "<td>" + outcome + "</td>" + 

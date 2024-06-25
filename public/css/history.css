@@ -1,5 +1,30 @@
-table, th, td {
+
+
+#tbl, tr, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 10px;
+    
+}
+
+#historyBox{
+    display: flex;
+    justify-content: center;
+}
+
+.xd{
+    font-size: 36px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.negative{
+    background-color: darkred;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.positive{
+    background-color: greenyellow;
+    font-weight: 900;
+    font-size: 25px;
 }

@@ -3,6 +3,7 @@
 
 <head>
     <script type="text/javascript" src="/public/js/actions.js"></script>
+    <script type="text/javascript" src="/public/js/time.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/public/css/history.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +14,30 @@
 
     
 
-    <form id="balance">Наличност: <tt id="output" style="font-weight: 600;"></tt></form>
-    <a href="index.html">върни се</a>
-    
-    <table>
-        <caption>История</caption>
-        <tr>
-            <th>No</th>
-            <th>Дата</th>
-            <th>Сума</th>
-            <th>Причина</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Hillary</td>
-            <td>Nyakundi</td>
-            <td>tables@mail.com</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Lary</td>
-            <td>Mak</td>
-            <td>developer@mail.com</td>
-        </tr>
-    </table>
+
+        
+    <a href="index.html" style="font-size: x-large; display: flex; justify-content: center;">върни се</a><br>
+    <div id="historyBox">
+        <table id="tbl">
+            <caption class="xd">История</caption>
+            <tr>
+                <th>+ / -</th>
+                <th>№</th>
+                <th>Дата</th>
+                <th>Сума</th>
+                <th>Причина</th>
+            </tr>
+
+            <tr id="input">
+                <td id="type"></td>
+                <td id="id"></td>
+                <td id="date"></td>
+                <td id="money"></td>
+                <td id="reason"></td>
+            </tr>
+        </table>
+        
+    </div>
    
 </body>
 
