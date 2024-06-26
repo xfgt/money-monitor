@@ -1,30 +1,58 @@
 
-
-#tbl, tr, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
+#historyBox{
+    
+    width: 500px;
+    height: 500px;
+    
     
 }
-
-#historyBox{
-    display: flex;
-    justify-content: center;
-}
-
 .xd{
     font-size: 36px;
     font-family:'Courier New', Courier, monospace;
 }
+#tbl, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: flexbox;
+    
+    
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:20px;
+    padding-left:20px;
+}
 
-.negative{
-    background-color: darkred;
+
+/*ouput table*/
+#ID{
+    font-weight: 900;
+}
+#type{
+    text-align: center;
     font-weight: 900;
     font-size: 25px;
 }
+#money{
+    text-decoration: underline;
+}
+
+#reason{
+    font-size: x-small;
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+    max-width: 160px;
+    
+}
+
+
+
+
+
+.negative{
+    background-color: darkred;
+    
 
 .positive{
     background-color: greenyellow;
-    font-weight: 900;
-    font-size: 25px;
+    
 }

@@ -1,41 +1,40 @@
+<!--select all from db-->
+<?php
+    require ''
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="/public/js/actions.js"></script>
-    <script type="text/javascript" src="/public/js/time.js"></script>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="/public/css/history.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/img/historyIcon.png" type="image/icon type">
+    <meta http-equiv="Content-Type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, text/html">
     <title>History</title>
+    <!--sloji ikonka-->
 </head>
 
 <body>
-
     
-
-
-        
+    
     <a href="index.html" style="font-size: x-large; display: flex; justify-content: center;">върни се</a><br>
+    
     <div id="historyBox">
-        <table id="tbl">
-            <caption class="xd">История</caption>
-            <tr>
-                <th>+ / -</th>
-                <th>№</th>
-                <th>Дата</th>
-                <th>Сума</th>
-                <th>Причина</th>
-            </tr>
+        <section>
+            <table id="tbl">
+                <caption class="xd">История</caption>
+                <tr>
+                    <th>№</th>
+                    <th>Дата</th>
+                    <th>Действие</th>
+                    <th>Сума</th>
+                    <th>Причина</th>
+                </tr>
 
-            <tr id="input">
-                <td id="type"></td>
-                <td id="id"></td>
-                <td id="date"></td>
-                <td id="money"></td>
-                <td id="reason"></td>
-            </tr>
-        </table>
+                <!--print table rows-->
+            
+
+            </table>
+        </section>
         
     </div>
    
