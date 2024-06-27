@@ -1,20 +1,16 @@
 
 #historyBox{
-    
-    width: 500px;
+    width: 1100px;
     height: 500px;
-    
-    
 }
 .xd{
-    font-size: 36px;
+    font-size: 40px;
     font-family:'Courier New', Courier, monospace;
 }
 #tbl, tr, th, td{
     border: 1px solid black;
     border-collapse: collapse;
-    display: flexbox;
-    
+    font-size: x-large;
     
     padding-top:10px;
     padding-bottom:10px;
@@ -24,35 +20,33 @@
 
 
 /*ouput table*/
+
 #ID{
     font-weight: 900;
 }
-#type{
+
+.type{
     text-align: center;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 36px;
 }
-#money{
-    text-decoration: underline;
+#negative{
+    background-color: red;
+}
+#positive{
+    background-color: greenyellow;
 }
 
-#reason{
-    font-size: x-small;
+#amount{
+    text-decoration: underline;
+    text-align: center;
+}
+
+#description{
+    font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     word-wrap: break-word;
-    max-width: 160px;
+    max-width: 360px;
     
-}
-
-
-
-
-
-.negative{
-    background-color: darkred;
-    
-
-.positive{
-    background-color: greenyellow;
     
 }
