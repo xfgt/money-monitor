@@ -9,10 +9,10 @@ body{
 
 #inputBox{
     text-align: center;
-    margin: 5%;
-    border: solid 1px black;
-    padding: 15px;
-    width: 1000px;
+    margin: 1% auto 0 auto;
+    padding: 2% auto 0 auto;
+    max-width: 1000px;
+    min-width: 220px;
 }
 
 button,input {
@@ -30,9 +30,6 @@ button,input {
   }
 #incomeButton {background-color: greenyellow; border: none;}
 #outcomeButton {background-color: red; border: none;}
-#statusButton{
-    border: 1px solid black;
-}
 
 #makeBalance{
     padding: 5% 0 0 0;
