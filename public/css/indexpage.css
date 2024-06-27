@@ -1,38 +1,29 @@
 body{
-    font-size: 22px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#incomeBox, #outcomeBox{
+    margin: 0 auto 0 auto;
+    max-width: 600px;
 }
 
 #mainContent{
     text-align: center;
 }
 
-#inputBox{
-    text-align: center;
-    margin: 1% auto 0 auto;
-    padding: 2% auto 0 auto;
-    max-width: 1000px;
-    min-width: 220px;
-}
 
-button,input {
-    width: 220px;
-    height: 60px;
+
+button, input {
+    width: 300px;    
     color: black;
-    padding: 16px 32px;
+    padding: 16px 0px 18px 0px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+
     font-size: 25px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.1s;
     cursor: pointer;
   }
-#incomeButton {background-color: greenyellow; border: none;}
-#outcomeButton {background-color: red; border: none;}
-
-#makeBalance{
-    padding: 5% 0 0 0;
-}
 
 

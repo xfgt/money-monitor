@@ -6,98 +6,87 @@
     <link rel="icon" href="public/img/fc.gif" type="image/gif">
     <meta http-equiv="Content-Type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, text/html" />
     <title>Money Monitoring</title>
+    
 </head>
 
 <body>
     
-    <div id="statusBox"><a href="history.html">История</a></div>
+    <div id="statusBox"><a href="history.html">История</a></div><br>
+    
+
 
     <div id="mainContent">
-        <div id="inputBox" style="border: none;">
-            <form id="makeBalance" name="frmInsertDB" method="GET">
-                <!--<h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="f_balance" style="font-weight: 800;"></tt> лв.</h2>-->
+        <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="f_balance" style="font-weight: 800;"></tt>Скоро!</h2><br>
+        
+        <div id="incomeBox">
+            <form id="form_income" name="formIncome" method="GET" action="public/php/insertToDB.php">
                 
-                <div id="mainButtons">
+                <div id="buttonIncome">
                     <!--Въвеждане-->
-                    <a
-                        onclick="
-                                    document.getElementById('fundsField').style.display = 'block';
-                                    document.getElementById('expencesField').style.display = 'none';
-                                    document.getElementById('SubmitDiv').style.display = 'block';
-                                    document.getElementById('inputBox').style.border = 'solid 1px black';
-                                ">
-                        <input type="button" value="+ Въвеждане" id="incomeButton"></input>
+                    <a onclick="
+                        document.getElementById('fundsField').style.display = 'block';
+                        document.getElementById('expencesField').style.display = 'none';
+                        document.getElementById('SubmitDivIn').style.display = 'block';
+                        document.getElementById('fundsField').style.border = 'solid 1px black';
+                    ">
+                        <input type="button" value="+ Въвеждане" style="background-color: greenyellow;"></input>
                     </a>
-
-                    
                 </div>
                 
-                
-                <br><br>
-
+                <br>
                 <!--Поле въвеждане-->
-                <div id="fundsField" style="display:none;">
-                    <input type="text" name="ActionIn" value="1" style="display: none;">
-                    <hr>
-                    <label>Въвеждана сума </label>
-                    <input type="number" name=AmountAdded id="amountP" placeholder="864.19"  />
+                <div id="fundsField" style="display: none;">
+                    <input type="text" name="Action" value="1" style="display: none;">
+                    <label>Въвеждана сума </label> <input type="number" name=AmountAdded  placeholder="864.19"  required/>
                     <br><br>
-                    <label>Аргументи </label>
-                    <input type="text" name=ArgumentsIncome id="argumentsP" placeholder="заплата"  />
-                    <hr>
+                    <label>Аргументи </label> <input type="text" name=ArgumentsIncome  placeholder="заплата" required />
+                    <br><br>
+                    <!--Бутонче за изпращане-->
+                    <div id="SubmitDivIn" style="display:none;">
+                        <button type="submit">Вкарай!</button>
+                    </div>
                 </div> 
-                
 
                 
-
-                <!--Бутонче за изпращане-->
-                <div id="SubmitDiv" style="display:none;"><button type="submit" id="Submit" name="Submit">Изпрати</button></div>
                 
-            </form>
+            </form> 
+        </div>
 
-
-            <form id="makeBalance" name="frmInsertDB" method="GET">
-                <!--<h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="f_balance" style="font-weight: 800;"></tt> лв.</h2>-->
+        <div id="outcomeBox">
+            <form id="form_outcome" name="formOutcome" method="GET" action="public/php/insertToDB.php">
                 
-                <div id="mainButtons">
-
+                <div id="buttonOutcome">
                     <!--Извеждане-->
-                    <a
-                        onclick="
-                                    document.getElementById('expencesField').style.display = 'block';
-                                    document.getElementById('fundsField').style.display = 'none';
-                                    document.getElementById('SubmitDiv').style.display = 'block';
-                                    document.getElementById('inputBox').style.border = 'solid 1px black';
-                                    
-                                ">
-                        <input type="button" value="- Извеждане" id="outcomeButton"></input>
+                    <a onclick="
+                        document.getElementById('fundsField').style.display = 'none';
+                        document.getElementById('expencesField').style.display = 'block';
+                        document.getElementById('SubmitDivOut').style.display = 'block';
+                        document.getElementById('expencesField').style.border = 'solid 1px black';
+                    ">
+                        <input type="button" value="- Извеждане" style="background-color: red;"></input>
                     </a>
                 </div>
                 
-                
-                
-
+                <br>
                 <!--Поле извеждане-->
                 <div id="expencesField" style="display:none;">
-                    <input type="text" name="ActionOut" value="0" style="display: none;">
-                    <hr>
-                    <label>Извеждана сума </label>
-                    <input type="number" name=AmountDrawn id="amountM" placeholder="64.76"  />
+                    <input type="text" name="Action" value="0" style="display: none;">
+                    <label>Извеждана сума </label> <input type="number" name=AmountDrawn  placeholder="64.33"  required/>
                     <br><br>
-                    <label>Аргументи </label>
-                    <input type="text" name=ArgumentsOutcome id="argumentsM" placeholder="да платя телефона"  />
-                    <hr>
-                </div>
+                    <label>Аргументи </label> <input type="text" name=ArgumentsOutcome  placeholder="сметката за телефона" required />
+                    <br><br>
+                    <!--Бутонче за изпращане-->
+                    <div id="SubmitDivOut" style="display:none;">
+                        <button type="submit">Изведи</button>
+                    </div>
+                </div> 
 
-                <!--Бутонче за изпращане-->
-                <div id="SubmitDiv" style="display:none;"><button type="submit" id="Submit" name="Submit">Изпрати</button></div>
                 
-            </form>
+                
+            </form> 
+
 
         </div>
-                       
-        <div id="msg"></div>
-
     </div>
 
 
