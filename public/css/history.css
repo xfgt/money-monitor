@@ -1,7 +1,9 @@
 
 #historyBox{
     width: 1100px;
-    height: 500px;
+    height: auto;
+    display: flex;
+    margin: 1% auto 1% auto;
 }
 .xd{
     font-size: 40px;
