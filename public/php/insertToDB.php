@@ -1,43 +1,36 @@
 <?php
 
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
+$user = 'root';
+$password = '';
+$database = 'moneysavingsdb';
+$servername='localhost:3306';
 
-$con = mysqli_connect('localhost', 'root', '','moneysavingsdb');
+$con = new mysqli($servername, $user, $password, $database);
 
-// get the post records
-//$name = $_POST['container'];
+$action = $_GET['Action'];
 
-$action;
-
-
-$actionIn = $_GET['ActionIn'];
-$actionOut = $_GET['ActionOut'];
-
-
-if($actionIn == 1){
-	$action = $actionIn;
+if($action == 1){
 	$amount = $_GET['AmountAdded'];
 	$description = $_GET['ArgumentsIncome'];
 }
 
-
-if($actionOut == 0){
-	$action = $actionOut;
+if($action == 0){
 	$amount = $_GET['AmountDrawn'];
 	$description = $_GET['ArgumentsOutcome'];
 }
 
+$sql = " INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES ($action, $amount, '$description')";
+$result = $con->query($sql);
 
-// database insert SQL code
-$sql = "INSERT INTO 'history' ('ACTION', 'AMOUNT', 'DESCRIPTION') VALUES ('$action', '$amount', '$description')";
-
-// insert in database 
-$rs = mysqli_query($con, $sql);
-
-if($rs)
+if($result)
 {
-	echo "Информацията е вкарана!";
+	echo "<h2>Информацията бе вкарана успешно!</h2>";
 
-} else echo "проблем :/";
+} else echo "<h2>проблем :/</h2>";
 
+header("Location: ../../");
+die();
+
+
+$con->close();
 ?>
