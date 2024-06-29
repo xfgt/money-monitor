@@ -4,31 +4,32 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/public/css/history.css">
-    <link rel="icon" href="public/img/historyIcon.png" type="image/icon type">
+    <link rel="stylesheet" href="./public/css/history.css">
+    <link rel="icon" href="./public/img/historyIcon.png" type="image/icon type">
     <meta http-equiv="Content-Type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, text/html">
     <title>History</title>
+    <script type="text/javascript" src="./public/js/checkEmpty.js"></script>
 </head>
 
-<body>
+<body onload="isTableEmpty()">
     
     
     <a href="index.html" style="font-size: xx-large;">върни се</a><br>
     
-    <div id="historyBox">
+    <div id="historyBox" style="display: none;">
         <section>
             <table id="tbl">
                 <caption class="xd">История</caption>
-                <tr>
-                    <th>№</th>
-                    <th>Дата</th>
-                    <th>Действие</th>
-                    <th>Сума</th>
-                    <th>Причина</th>
-                </tr>
-                
-                <?php require ('public/php/printTableRow.php');?>
-
+                    <tr>
+                        <th>№</th>
+                        <th>Дата</th>
+                        <th>Действие</th>
+                        <th>Сума</th>
+                        <th>Причина</th>
+                    </tr>
+                             
+                <div id="inp"><?php require ('./public/php/printTableRow.php');?></div>
+                <!--<?php require ('./public/php/printTableRow.php');?>-->
             </table>
         </section>
         
