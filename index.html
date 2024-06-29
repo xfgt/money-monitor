@@ -8,16 +8,17 @@
     <title>Money Monitoring</title>
     <script type="text/javascript" src="public/js/hideShow.js"></script>
     
+    
 </head>
 
-<body>
+<body onload="loadBalance()">
     
     <div id="statusBox"><a href="history.html">История</a></div><br>
     
 
 
     <div id="mainContent">
-        <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="f_balance" style="font-weight: 800;"></tt>Скоро!</h2><br>
+        <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="tt_balance" style="font-weight: 800;"><?php require ('public/php/getBalance.php');?></tt> лв.</h2><br>
         
         <div id="incomeBox">
             <form id="form_income" name="formIncome" method="GET" action="public/php/insertToDB.php">
