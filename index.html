@@ -13,11 +13,14 @@
 
 <body onload="loadBalance()">
     
-    <div id="statusBox"><a href="history.html">История</a></div><br>
+    <div class="topBarClass">
+        <a href="../harambe universe/index.html">Start page</a>
+        
+    </div>
     
 
-
     <div id="mainContent">
+        <a href="history.html">История</a>
         <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="tt_balance" style="font-weight: 800;"><?php require ('public/php/getBalance.php');?></tt> лв.</h2><br>
         
         <div id="incomeBox">
@@ -88,7 +91,12 @@
 
 
 
-
+    <div class="bottomBarClass">
+        <div id="me">
+            <a href="https://github.com/xfgt">Author</a>
+            <a href="mailto:sample@email.com">Contact</a>
+        </div>
+    </div>
 
 
 
