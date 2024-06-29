@@ -6,7 +6,7 @@ function isTableEmpty(){
     
     
     if(table.childNodes.length === 0){
-        alert("Таблицата е празна!\n Моля, извършете процедура, за да създадете история. :)");
+        alert("Таблицата е празна!\nМоля извършете процедура, за да създадете история. :)");
         window.location.replace("./index.html")
     } else {
         historyBoxDiv.style.display = 'block';
