@@ -9,7 +9,7 @@ function isTableEmpty(){
         alert("Таблицата е празна!\nМоля извършете процедура, за да създадете история. :)");
         window.location.replace("./index.html")
     } else {
-        historyBoxDiv.style.display = 'block';
+        historyBoxDiv.style.display = 'flex';
     }
     
 
