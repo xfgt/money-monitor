@@ -22,7 +22,10 @@
 
     <div id="mainContent">
         <a href="history.html">История</a>
-        <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="tt_balance" style="font-weight: 800;"><?php require ('public/php/getBalance.php');?></tt> лв.</h2><br>
+        <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="tt_balance" style="font-weight: 800;">
+                <?php include ('public/php/getBalance.php');?>
+            </tt> лв.
+        </h2><br>
         
         <div id="incomeBox">
             <form id="form_income" name="formIncome" method="GET" action="public/php/insertToDB.php">
@@ -88,9 +91,6 @@
 
         </div>
     </div>
-
-
-
 
     <div class="bottomBarClass">
         <div id="me">

@@ -1,7 +1,7 @@
 <?php
 
 $user = 'root';
-$password = '';
+$password = 'root';
 $database = 'moneysavingsdb';
 $servername='localhost:3306';
 
@@ -32,5 +32,5 @@ header("Location: ../../");
 die();
 
 
-$con->close();
+//$con->close();
 ?>

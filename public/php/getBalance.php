@@ -1,9 +1,7 @@
 <?php
 $user = 'root';
-$password = '';
+$password = 'root';
 $database = 'moneysavingsdb';
-
-
 $servername='localhost:3306';
 
 $mysqli = new mysqli($servername, $user, $password, $database);
@@ -15,9 +13,11 @@ if ($mysqli->connect_error) {
     $mysqli->connect_error);
 }
 
+$selectSumIn = 'SELECT SUM(AMOUNT) FROM history WHERE ACTION=1';
+$selectSumOut = 'SELECT SUM(AMOUNT) FROM history WHERE ACTION=0';
 
-$positive = get_value($mysqli, " SELECT SUM(AMOUNT) FROM history WHERE ACTION=1 ");
-$negative = get_value($mysqli, " SELECT SUM(AMOUNT) FROM history WHERE ACTION=0 ");
+$positive = get_value($mysqli, $selectSumIn);
+$negative = get_value($mysqli, $selectSumOut);
 
 $res = $positive - $negative;
 echo $res;

@@ -9,7 +9,10 @@
             <td id="ID"><?php echo $rows['ID'];?></td>
             <td id="date"><?php echo $rows['TIMEDATE'];?></td>
 
-            <?php echo($rows['ACTION'] == 0 ? '<td id="negative" class="type">-</td>' : '<td id="positive" class="type">+</td>');?>
+            <?php echo $rows['ACTION'] == 0 ? 
+                        '<td id="negative" class="type">-</td>' : 
+                        '<td id="positive" class="type">+</td>';
+            ?>
             
             
             <td id="amount"><?php echo $rows['AMOUNT'];?> лв.</td>

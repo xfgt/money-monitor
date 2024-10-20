@@ -22,7 +22,7 @@ body{
     overflow: hidden;
     padding: 1% 0 1% 0;
     text-align: center;
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width: 100%;
 }
