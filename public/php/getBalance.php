@@ -1,6 +1,6 @@
 <?php
 $user = 'root';
-$password = 'root';
+$password = '';
 $database = 'moneysavingsdb';
 $servername='localhost:3306';
 

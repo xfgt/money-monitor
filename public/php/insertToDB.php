@@ -1,7 +1,7 @@
 <?php
 
 $user = 'root';
-$password = 'root';
+$password = '';
 $database = 'moneysavingsdb';
 $servername='localhost:3306';
 
@@ -20,6 +20,7 @@ if($action == 0){
 }
 
 $sql = " INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES ($action, $amount, '$description')";
+// $sql = file_get_contents("..\db\insertTodbDefaultTime.sql");
 $result = $con->query($sql);
 
 if($result)
