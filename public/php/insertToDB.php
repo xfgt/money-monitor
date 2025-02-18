@@ -8,6 +8,8 @@ $servername='localhost:3306';
 $con = new mysqli($servername, $user, $password, $database);
 
 $action = $_GET['Action'];
+$timestamp = $_GET['time-income'];
+
 
 if($action == 1){
 	$amount = $_GET['AmountAdded'];
@@ -19,8 +21,15 @@ if($action == 0){
 	$description = $_GET['ArgumentsOutcome'];
 }
 
-$sql = " INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES ($action, $amount, '$description')";
-// $sql = file_get_contents("..\db\insertTodbDefaultTime.sql");
+if(!$timestamp){
+
+	$sql = "INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES ($action, $amount, '$description')";
+} else {
+	$sql = "INSERT INTO history (TIMEDATE, ACTION, AMOUNT, DESCRIPTION) VALUES ($timestamp, $action, $amount, '$description')";
+}
+
+
+// $sql = file_get_contents('../db/insertTodb.sql');
 $result = $con->query($sql);
 
 if($result)
