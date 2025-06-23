@@ -6,15 +6,15 @@
 
 ## Screenshots
 
-<img src="screenshots/img1.png"/>
+<img src="screenshots/_1_amount_before.png"/>
 <br><br>
 
-<img src="screenshots/img2.png"/>
+<img src="screenshots/_2_action.png"/>
 <br><br>
 
-<img src="screenshots/img2_1.png"/>
+<img src="screenshots/_3_history_table_before.png"/>
 <br><br>
 
-<img src="screenshots/img3.png"/>
+<img src="screenshots/_4_history_table_after.png"/>
 <br><br>
-<img src="screenshots/img3_1.png"/>
+<img src="screenshots/_5_amount_after.png"/>
