@@ -1,0 +1,57 @@
+CREATE DATABASE IF NOT EXISTS moneysavingsdb;
+USE moneysavingsdb;
+
+--- Create a script for the database;
+DROP TABLE IF EXISTS history;
+CREATE TABLE history(
+    ID PRIMARY KEY INT NOT NULL,
+    TIMEDATE DATETIME,
+    ACTION boolean,
+    AMOUNT float
+    DESCRIPTION varchar(255)   
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- INSERT INTO history (TIMEDATE, ACTION, AMOUNT, DESCRIPTION) VALUES ("2025-02-15 10:35:43", 1, 1337, "custom date");
+-- INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES (0, 43.23, "default value");
+-- INSERT INTO history (ACTION, AMOUNT, DESCRIPTION) VALUES (1, 542.11, "default value 1");
+
+-- DESCRIBE history;
+-- SELECT * from history;
+-- SELECT * FROM history ORDER BY TIMEDATE DESC; 
+
+-- SELECT SUM(AMOUNT) FROM history WHERE ACTION=0;
+-- SELECT SUM(AMOUNT) FROM history WHERE ACTION=1;
+
+
+-- ALTER TABLE history DROP CONSTRAINT TIMEDATE;
+-- ALTER TABLE history DROP CONSTRAINT ID;
+-- ALTER TABLE history ADD CONSTRAINT PRIMARY KEY (TIMEDATE);
+-- ALTER TABLE history ADD CONSTRAINT UNIQUE (TIMEDATE);
+
