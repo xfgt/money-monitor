@@ -5,30 +5,7 @@ body{
 }
 
 
-.topBarClass{
-    background-color:azure;
-    overflow: hidden;
-    padding: .5%;
-    position: relative;
-    
-}
-.topBarClass a{
-    color:slategray;
-    margin: 0 1% 0 1%;
-}
 
-.bottomBarClass{
-    background-color: cornsilk;
-    overflow: hidden;
-    padding: 1% 0 1% 0;
-    text-align: center;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-}
-.bottomBarClass a{
-    margin: 0 .5% 0 .5%;
-}
 
 
 
