@@ -1,1 +1,0 @@
-INSERT INTO history (TIMEDATE, ACTION, AMOUNT, DESCRIPTION) VALUES ($timestamp, $action, $amount, '$description');
