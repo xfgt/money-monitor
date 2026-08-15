@@ -17,7 +17,9 @@ $pageTitle = $pageTitle ?? "Default Site Title";
         
         <a href="https://github.com/xfgt">Author</a>
         <a href="mailto:xfgt_71@proton.me">Contact</a>
-        <p style="font-size: 12px">&copy; <?php echo date('Y'); ?> Teodor Mangarov (xfgt) </p>
+        <p style="font-size: 12px">&copy; <?php echo date('Y'); ?>
+            Teodor Mangarov (xfgt). All rights are reserved.
+        </p>
     </footer>
 
     
