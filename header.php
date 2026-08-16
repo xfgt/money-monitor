@@ -24,7 +24,7 @@ $pageTitle = $pageTitle ?? "Default Site Title";
             <a href="/dashboard.php" class="login-btn">Account</a>
             <a href="/logout.php">Logout</a>
             <?php else: ?>
-            <a href="/login.php" class="login-btn">Login</a>
+            <a href="login-module/index.html" class="login-btn">Login</a>
         <?php endif; ?>
 
     </nav>
