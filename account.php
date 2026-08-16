@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Money Monitoring - Account";
 require_once 'header.php';
+require_once 'footer.php';
 
 
 // // Force PHP to display all errors on screen
@@ -8,8 +9,7 @@ require_once 'header.php';
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 // phpinfo();
-
-require_once __DIR__ . '/public/src/php/testDbConnection.php';
+        
 
 ?>
 
@@ -19,19 +19,28 @@ require_once __DIR__ . '/public/src/php/testDbConnection.php';
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, text/html" />
     <link rel="stylesheet" href="public/src/css/page.css">
+    
     <link rel="icon" href="public/img/fc.gif" type="image/gif">
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
 
+
+    
     
     
     <script type="text/javascript" src="public/src/js/buttonsHideShow.js"></script> <!-- script for dynamic hide/show buttons -->
  </head>
 
 <body>
+
+    <?php 
+        require_once __DIR__ . '/public/src/php/testDbConnection.php'; 
+    ?>
+
+    
+    
       
     <div id="mainContent">
         <div id="historyPage"><a href="history.php">История</a></div> <!-- Todo NEW: #historyPage settings css -->
-
 
         <!-- Main balance value --> 
         <h2 id="h2_balance" style="font-weight: 400;">Наличност: <tt id="tt_balance" style="font-weight: 800;">
@@ -105,16 +114,7 @@ require_once __DIR__ . '/public/src/php/testDbConnection.php';
 
     </div> <!-- main content -->
 
-    
-
-
-
-
 </body>
 
 
-
-<?php
-require_once 'footer.php';
-?>
 </html>
