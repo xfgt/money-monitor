@@ -1,0 +1,98 @@
+/* indexlog.html */
+
+.indexlog-main{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+#container-navbar { /*navbar*/
+    position: sticky;
+    margin: auto;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2e2e2e;
+
+    max-width: 2700px;/*sync with under-navbar*/
+    min-width: 300px;
+}
+
+
+.button, .active { /* li's */
+  float: left;
+  cursor: pointer;
+  }
+  .button:hover{
+    /* background-color: rgb(185, 18, 18); */
+    background-color: #464646;
+  }
+  #logout_LI:hover{
+    background-color: #c9b506;
+  }
+  .active{
+    background-color: rgb(185, 18, 18);
+  }
+
+.inButtonLink { /* a's */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.upload-btn-wrapper { /*upload button containter*/
+    position: relative;
+    overflow: hidden;    
+    float: right;
+  }
+  .upload-btn-wrapper input[type=file] {
+    cursor: pointer; /*here*/
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#uploadImage_LI {
+    background-color: #137743;
+    box-shadow: 8px 8px 18px 0px rgba(84, 181, 119, 0.3) !important;
+    color: white;
+  }
+  #uploadImage_LI:hover{
+    background-color: #0e5a33;
+    font-weight: 600;
+  }
+  #uploadImage_LI:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    -webkit-transform: translate(-105%, 0);
+    transform: translate(-105%, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+#input_myfile:hover:before{
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+  
+
+.under-navbar{ /*containter for elemetns under the navbar*/ 
+  margin: auto;
+  padding: 10px;
+
+  
+  max-width: 2700px;
+  min-width: 300px; /*sync with #container-navbar*/
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://web.archive.org/web/20090730005020/http://es.geocities.com/pintagendes619/imagenes/botons/radar.gif">
+        <link rel="stylesheet" href="public/src/css/styles_logins.css">
+        <title>Регистрирай се</title>
+    </head>
+    
+    <body class="signup_gifbg" onload="timeCount();">
+        <div class="signup_body">
+            <div class="signup_topImage"><img src="public/img/bull-clipart-bull-rider-14.png" title="ОСМЕЛЯВАШ ЛИ СЕ ДА ПРОДЪЛЖИШ НАПРЕД?!"></div>
+
+            <div class="todaysInfo" id="texts">
+                <div id="clock">
+                    <script type="text/javascript" src="public/src/js/time.js" defer></script>
+                </div>
+            </div>
+            <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0 auto 5px auto;">Създай профил</h1>
+
+            <hr><br>
+
+            <div class="forms" id="forms">
+                <form action ="/submit-form" method="POST" id="reg">
+                    <div class="infoBars" id="textFields">           
+                        <input type="text" id="fname" name="fname" required placeholder="Име" autocomplete="off"  oninvalid="this.setCustomValidity('Моля въведи име')" oninput="this.setCustomValidity('')"/>
+                        <input type="text" id="lname" name="lname" required placeholder="Фамилия" autocomplete="off" oninvalid="this.setCustomValidity('Моля въведи фамилия')" oninput="this.setCustomValidity('')"/>
+                        <input type="text" id="email" name="email" required placeholder="Email" autocomplete="off" oninvalid="this.setCustomValidity('Моля въведи имейл')" oninput="this.setCustomValidity('')"/>
+                        <input type="password" id="pwd" name="pwd" required placeholder="Парола" autocomplete="off" oninvalid="this.setCustomValidity('Въведи паролата си тук')" oninput="this.setCustomValidity('')"/>
+                    </div>
+                    <div class="actionButtons" id="ltBtns">
+                        <button type="submit" id="createAccount">РЕГИСТРИРАЙ СЕ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="goback" >Обърка ли се? <a href="index.html">Върни се обратно</a>.</div>
+        
+    </body>
+</html>

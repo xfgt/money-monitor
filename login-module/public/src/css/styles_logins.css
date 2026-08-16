@@ -1,0 +1,216 @@
+
+
+/* 
+  gitGUzz style css file 
+  covers: |index.html
+          |signin.html
+          |signup.html
+*/
+
+/*ejs views*/
+#container-signin{
+  text-align:center;
+}
+
+
+
+/* index.html */
+.index_body {
+    /*background-image: url(https://web.archive.org/web/20091027041540im_/http://www.geocities.com/chee_yong_tat_14/website/gif/1galaxystarsbkg.gif);*/
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F1225739%2Fscreenshots%2F4514931%2Fdribbble_100day_day22.gif&f=1&nofb=1&ipt=ea4279d15781c39782373f7bb2829f3b0a1e90bbc4a53bb71f2a16b25fa47e43&ipo=images);*/
+    /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.siguetuestrella.com%2Fwp-content%2Fuploads%2F2018%2F05%2FStars_Dark_Background.gif&f=1&nofb=1&ipt=790933bd7362a0a46c9e24019869241c99e0b83e251a86e8fe2ce9a1c380f36b&ipo=images); */
+    /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F66.media.tumblr.com%2Fcc2e727667a023f6a89e80513c4d8649%2Ftumblr_pdk42eWuKq1rnbw6mo1_1280.gif&f=1&nofb=1&ipt=377a2d2d685ab9220bf3093b8021b90256a50a66dc87d78f6377044c1e74f5ee&ipo=images); */
+    background-size: cover;
+}
+
+.container {
+  display: table; /* important */
+  max-width: fit-content;
+  margin: 3% auto;
+  width: 50%;
+  text-align: center;
+    
+}
+
+/*li's [buttons]*/
+#signup, #signin {
+  list-style-type: none;
+  background-color: red;
+  padding: 25px;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 3px 8px black;
+  border-radius: 15px;
+  max-width: 300px;
+  
+}
+#signup:hover,
+#signin:hover {
+  /* background-color: rgba(2, 87, 197, 0.822); */
+  background-color: rgba(197, 2, 2, 0.822);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+#signup:hover a,
+#signin:hover a {
+  color: white;
+}
+
+/*a's*/
+#sgnup, #sgnin {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+
+/* signup.html */
+.signup_gifbg{
+  background-image: url("https://media.giphy.com/media/3o7aD6L3BHd76R0RCE/giphy.gif");
+  background-size: cover;
+}
+.signup_topImage{ /*bull*/
+  display: flex;
+  margin: 2% auto 5px auto;
+  width: 250px;
+  height: 250px;
+}
+.todaysInfo{ /* date & time */
+  display: flex;
+  
+}
+#clock{
+  margin: 2% auto 5px auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600; 
+  font-size: 14px ;
+}
+.signup_body{
+  
+  display: table; /* important */
+  width: 330px;
+  margin: 3% auto 5px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(0,0,0,0.5);
+  font-size: 15px;
+}
+
+.infoBars{
+  display:grid;
+}
+
+#fname, #lname, #email, #pwd{
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.actionButtons{ /*button container */
+  margin: 5% auto 0 auto;
+}
+
+#createAccount{ /*button*/
+  display: grid; /*important*/
+  width: auto;
+  max-width: 370px;
+  margin: 0 auto 0 auto;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 50px 5px 50px;
+  border: none;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5)
+}
+#createAccount:hover{
+  background-color: rgba(255, 0, 0, 0.8);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+.goback{
+  width: auto;
+  max-width: 320px;
+  min-width: 300px;
+  text-align: center;
+  margin: 8px auto 5px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(0,0,0,0.5);
+  font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+/* signin.html */
+
+.login{
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgiffiles.alphacoders.com%2F168%2F168272.gif&f=1&nofb=1&ipt=1b663a141b426c6b260443dfc6b4f19079b07327948a1dfc44ee9fcda81b4bf2&ipo=images");
+  background-size: cover;
+}
+
+.h1_login{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login_body{
+  
+  display: table; 
+  margin: 3% auto 5px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(0,0,0,0.5);
+  font-size: 18px;
+}
+
+
+#email-signin, #password-signin{
+  display: flex;
+  width: 300px;
+  height: 20px;
+  margin: 0 auto 10px auto;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#submit-login{ /*button*/
+  display: grid; /*important*/
+  width: 300px;
+  margin: 15px auto 0 auto;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 50px 5px 50px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(17, 145, 0, 0.63);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
+}
+#submit-login:hover{
+  background-color: rgba(53, 173, 5, 0.8);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5);
+}
+#login_goback{
+  color:black;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}

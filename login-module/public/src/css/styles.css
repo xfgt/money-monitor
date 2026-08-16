@@ -1,0 +1,643 @@
+body {
+  background-image: url(img/thrimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#indexLogVh {
+  height: 100%;
+  background-size: auto;
+}
+/* logged index */
+#content-holder {
+  margin: auto;
+  max-width: 70%;
+  height: 85vh;
+  background-color: rgba(93, 107, 150, 0.822);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.titleText {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+.texts {
+  font-family: cursive;
+  color: white;
+  font-size: 22px;
+}
+.listItems {
+  color: white;
+  font-size: 20px;
+}
+#container {
+  max-width: 500px;
+  height: 200px;
+  display: grid;
+  align-items: center;
+  padding: 250px 0;
+  margin: auto;
+  margin-top: 5em;
+}
+/* Sign in styles below */
+#container-signin {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(49, 97, 253, 0.918),
+    rgba(50, 132, 255, 0.829)
+  );
+  max-width: 600px;
+  display: grid;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+}
+#fields {
+  display: grid;
+  margin-top: 70px;
+  max-width: 400px;
+  /* margin-left: 10%; */
+  padding: 100px;
+}
+
+#email-signin {
+  background-color: rgba(245, 245, 245, 0.973);
+  width: 250px;
+  padding: 10px;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#signin-btns {
+  margin-top: 100px;
+  display: block;
+}
+#password-signin {
+  background-color: rgba(245, 245, 245, 0.973);
+  width: 250px;
+  padding: 10px;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#submit-signin {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 200px;
+  max-width: 300px;
+  height: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  /* margin-top: 30px; */
+  /* margin-left: 10%; */
+  border: 0.5px solid black;
+  /* position: static; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#registerButton {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 200px;
+  max-width: 300px;
+  height: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  /* margin-top: 30px; */
+  /* margin-left: 10%; */
+  border: 0.5px solid black;
+  /* position: static; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+#forgotten-pwd {
+  border: none;
+  background-color: rgba(85, 85, 85, 0.986);
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin-top: 150px;
+  border: 0.5px solid black;
+  margin-left: 20%;
+}
+#submit-signin:hover,
+#forgotten-pwd:hover, #registerButton:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+#btns {
+  display: block;
+  gap: 50px;
+  margin: auto;
+  left: 12%;
+  position: relative;
+}
+#signup,
+#signin {
+  list-style-type: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+  max-width: 300px;
+  padding: 5px;
+  margin-top: 30px;
+}
+#sgnup,
+#sgnin {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+#sig {
+  display: flex;
+  margin-top: 30px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+#signup:hover,
+#signin:hover {
+  background-color: rgba(2, 87, 197, 0.822);
+  cursor: pointer;
+}
+#signup:hover a,
+#signin:hover a {
+  color: white;
+}
+/* Nav menu buttons */
+#container-menu {
+  height: 100%;
+  width: 100%;
+}
+#navMenu {
+  background-color: rgba(255, 255, 255, 0.555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home,
+#gallery,
+#faq,
+#aboutus,
+#logout {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  margin-top: 15px;
+}
+#homeAnc,
+#galleryAnc,
+#faqAnc,
+#aboutusAnc,
+#logoutAnc {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: black;
+}
+#home:hover,
+#gallery:hover,
+#faq:hover,
+#aboutus:hover,
+#logout:hover {
+  background-color: rgba(117, 117, 117, 0.9);
+  border-radius: 20px;
+  cursor: pointer;
+}
+#home:hover a,
+#gallery:hover a,
+#faq:hover a,
+#aboutus:hover a,
+#logout:hover a {
+  color: white;
+}
+/* Sign up styles below */
+
+::placeholder {
+  color: black;
+
+  opacity: 0.9;
+}
+#forms {
+  max-width: 1000px;
+  height: 500px;
+  margin: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 60, 255, 0.747),
+    rgba(94, 137, 255, 0.829)
+  );
+  /* background-color: rgba(37, 37, 37, 0.555); */
+  border: 3px solid rgba(153, 153, 153, 0.493);
+  position: relative;
+  margin-top: 10%;
+}
+#ltBtns {
+  display: grid;
+  position: absolute;
+  margin-left: 62%;
+  margin-top: 16.5%;
+  max-width: 300px;
+  height: 100px;
+  gap: 10px;
+}
+#createAccount,
+#goBack {
+  width: 240px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: white;
+  border: 1px solid white;
+}
+#createAccount:hover,
+#goBack:hover {
+  background-color: rgba(8, 144, 255, 0.171);
+  cursor: pointer;
+  color: white;
+}
+#reg {
+  margin-left: 10%;
+}
+#erinf,
+#errms {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+#texts {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  position: relative;
+  top: 25%;
+  left: 30%;
+  display: flex;
+  max-width: 350px;
+  border: 2px solid white;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.253);
+  flex-direction: column-reverse;
+}
+#textFields {
+  left: 5%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#fname,
+#lname,
+#email,
+#pwd {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.884);
+  border: 1px solid white;
+  color: black;
+  border-radius: 10px;
+}
+#texts-signin {
+  width: 600px;
+  position: relative;
+  top: -50px;
+  left: 10%;
+  height: 100%;
+  width: 80%;
+  background-color: aliceblue;
+}
+#errinf-signin,
+#errms-signin {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+}
+@media only screen and (max-width: 1366px) {
+  body {
+    height: 100vh;
+  }
+  #content-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+  }
+  #navMenu {
+    max-width: 1366px;
+    margin: auto;
+  }
+  .texts {
+    font-size: 16px;
+  }
+  .listItems {
+    font-size: 14px;
+  }
+  #htitle {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  #forms {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #ltBtns {
+    margin: 0;
+    top: 60%;
+    left: 3%;
+  }
+  #texts {
+    margin: auto;
+    left: 50%;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 530px) {
+  #sig {
+    position: relative;
+  }
+  #forms {
+    position: absolute;
+    height: 100vh;
+  }
+  html {
+    position: relative;
+    height: 150vh;
+  }
+
+  #texts {
+    padding: 0px;
+    height: 10%;
+    top: 60%;
+    left: 15%;
+  }
+  #textFields {
+    margin-left: 25%;
+  }
+  #email-signin,
+  #password-signin {
+    margin-top: 10px;
+    display: grid;
+  }
+
+  body {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(161, 161, 161, 0.856),
+      rgb(153, 153, 153)
+    );
+    position: relative;
+  }
+
+  #btns {
+    display: grid;
+    position: absolute;
+    left: 0;
+  }
+  #container {
+    width: 500px;
+    max-width: 100%;
+    margin-right: 50%;
+    background-image: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #wrapperMainContent {
+    margin-top: -200%;
+  }
+  #htitle {
+    max-width: 500px;
+    margin: 90px auto;
+    font-size: 25px;
+  }
+  #signup,
+  #signin {
+    justify-content: center;
+    align-items: center;
+  }
+  #btnsNavigationMenu {
+    margin-left: 15%;
+  }
+  #reg {
+    margin-left: 6%;
+  }
+
+  #ltBtns {
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+  #forms {
+    height: 600px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+  #texts {
+    width: 400px;
+    margin: auto;
+  }
+  #erinf,
+  #errms {
+    font-size: 18px;
+    margin: auto;
+  }
+  #ltBtns {
+    max-width: 200px;
+    position: absolute;
+    display: flexbox;
+    bottom: 20%;
+    left: 0;
+    right: 6%;
+  }
+  #container {
+    margin-top: 15%;
+    margin-left: 45px;
+  }
+  #btns {
+    display: block;
+    margin-top: 5%;
+  }
+  li {
+    margin-top: 15px;
+  }
+  #fields {
+    display: grid;
+  }
+  #signin-btns {
+    display: block;
+    margin: auto;
+    margin-right: 15%;
+  }
+  #errinf-signin,
+  #errms-signin {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  #registerButton {
+    position: fixed;
+    top: 50%;
+    right: 25%;
+  }
+  #sig {
+    position: fixed;
+    right: 60px;
+    top: 0%;
+  }
+  #submit-signin {
+    position:  static;
+    top: 42%;
+    margin-right: 10vw;
+  }
+  #texts-signin {
+    position: fixed;
+    height: 20%;
+    top:70%;
+    text-align: center;
+  }
+  #fields {
+    max-width: 100%;
+    background-image: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #email-signin {
+    position: fixed;
+    right: 15%;
+    margin-top: 250px;
+  }
+  #password-signin {
+    position: fixed;
+    right: 15%;
+    margin-top: 300px;
+  }
+  #submit-signin {
+    position: fixed;
+    right: 15%;
+  }
+  #navMenu {
+    max-width: 479px;
+    margin: auto;
+  }
+  #btnsNavigationMenu {
+    margin-right: 100px;
+  }
+  #signin-btns {
+    margin-right: 55%;
+  }
+  #btns {
+    display: block;
+    padding: 0px;
+    width: 300px;
+    margin: auto;
+  }
+  #wrapperMainContent {
+    margin-right: 100%;
+  }
+  #reg {
+    margin-top: 20%;
+    margin-right: 150px;
+  }
+  #texts {
+    bottom: 50%;
+  }
+  #ltBtns {
+    position: fixed;
+    left: 0%;
+    top: 55%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #email-signin,
+  #password-signin {
+    width: 200px;
+    position: fixed;
+    left: 10%;
+  }
+  #submit-signin,
+  #forgotten-pwd {
+    width: 210px;
+    position: fixed;
+    font-size: medium;
+    left: 0px;
+    top: 30px;
+  }
+  #navMenu {
+    max-width: 280px;
+    margin: auto;
+  }
+  #btnsNavigationMenu {
+    margin-right: 100px;
+  }
+  #signin-btns {
+    margin-right: 35%;
+  }
+}
+@media only screen and (max-width: 280px) {
+  #email-signin,
+  #password-signin {
+    width: 200px;
+    position: fixed;
+    left: 30px;
+  }
+  #submit-signin,
+  #forgotten-pwd {
+    width: 210px;
+    font-size: medium;
+    position: fixed;
+    left: 10px;
+    top: 70px;
+  }
+  #navMenu {
+    max-width: 280px;
+    margin: auto;
+  }
+  #btnsNavigationMenu {
+    margin-right: 100px;
+  }
+  #signin-btns {
+    margin-right: 55%;
+  }
+}

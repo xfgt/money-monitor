@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://web.archive.org/web/20090730005020/http://es.geocities.com/pintagendes619/imagenes/botons/radar.gif">
+    <link rel="stylesheet" href="public/src/css/styles_logins.css" />
+    <title>Влез</title>
+  </head>
+
+  <body class="login">
+
+    <div class="login_body">
+      <h1 class="h1_login">Влез</h1>
+      <hr><br>
+      <div class="forms" id="forms">
+          <form action="/submit-form-login" method="POST" id="sig">
+            <input type="text" placeholder="Email" name="email" id="email-signin" required placeholder="Въведи имейл" oninvalid="this.setCustomValidity('Въведи имейл')" oninput="this.setCustomValidity('')"/>
+            <input type="password" placeholder="Password" name="password" id="password-signin" required placeholder="Въведи парола" oninvalid="this.setCustomValidity('Въведи парола')" oninput="this.setCustomValidity('')"/>
+            <button type="submit" value="Log in" id="submit-login">Log in</button>
+          </form>
+        </div>
+        <div id="login_goback"><a href="index.html">върни ме в началото</a></div>
+
+  </body>
+</html>
